@@ -1,0 +1,22 @@
+$mobile-breakpoint: 768px;
+$desktop-breakpoint: 1200px;
+
+@mixin mobile {
+  @media (max-width: $mobile-breakpoint) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop-breakpoint) {
+    @content;
+  }
+}
+
+@mixin hoverMobile {
+  @media (hover: none) or (max-width: $mobile-breakpoint) {
+    &:hover {
+      @content;
+    }
+  }
+}

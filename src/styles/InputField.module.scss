@@ -1,0 +1,42 @@
+.input {
+  display: flex;
+  justify-content: flex-start;
+  height: 2rem;
+  padding-left: 0.4rem;
+  border: 2px solid rgb(239, 239, 239);
+  border-radius: 0.3rem;
+  flex: 0;
+  width: 93%;
+
+  &:focus {
+    border: 2px solid lightgreen;
+    outline: none;
+  }
+}
+
+.formInput {
+  display: flex;
+  justify-content: flex-start;
+  height: 2.3rem;
+  border: 2px solid rgb(239, 239, 239);
+  border-radius: 0.2rem;
+  width: 95%;
+  font-size: 1rem;
+  padding-left: 0.3rem;
+
+  &:focus {
+    border: 2px solid lightgreen;
+    outline: none;
+  }
+}
+
+.label {
+  position: absolute;
+  top: -1.3rem;
+  cursor: default;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
