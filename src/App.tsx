@@ -46,7 +46,9 @@ const App: React.FC = () => {
   const deleteContact = (id: string) => {
     const confirmDelete = window.confirm('Are you sure you want to delete this contact?');
     if (confirmDelete) {
-      setContacts(contacts.filter(contact => contact.id !== id));
+      const updatedContacts = contacts.filter(contact => contact.id !== id)
+      setContacts(updatedContacts);
+      saveToLocalStorage(updatedContacts);
     }
   };
 
@@ -76,6 +78,7 @@ const App: React.FC = () => {
         />
         <button className={style.addButton} onClick={() => setShowForm(true)}>Add a new contact</button>
       </div>
+
       <div className={style.separator} />
 
       <div className={style.headlines}>

@@ -12,7 +12,7 @@ export const saveToLocalStorage = (contacts: Contact[]): void => {
 
 export const sortContacts = (contacts: Contact[], sortField: LabelsKey | undefined, isAscending: boolean | undefined): Contact[] => {
 
-  if (sortField === undefined) return []
+  if (sortField === undefined) return [] // ????????????
 
   const sortedContacts = [...contacts].sort((a, b) => {
     const valueA = a[sortField].toLowerCase();

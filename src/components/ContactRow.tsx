@@ -31,7 +31,7 @@ const ContactRow: FC<ContactItemProps> = ({ contactData, isEditing, onEdit, onSa
 
   const handleFormSubmit = (event: React.FormEvent) => {
     event.preventDefault();
-    onSave(contactData);
+    onSave(contact);
   };
 
   return (
